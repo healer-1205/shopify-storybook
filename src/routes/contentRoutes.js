@@ -62,6 +62,7 @@ const APP = {
 		CRM_DASHBOARD: lazy(() => import('../pages/presentation/crm/CrmDashboard')),
 		CUSTOMERS: lazy(() => import('../pages/presentation/crm/CustomersList')),
 		CUSTOMER: lazy(() => import('../pages/presentation/crm/Customer')),
+		PRODUCTS: lazy(() => import('../pages/presentation/crm/ProductsList')),
 		SALES: lazy(() => import('../pages/presentation/crm/Sales')),
 		INVOICE: lazy(() => import('../pages/presentation/crm/Invoice')),
 	},
@@ -396,6 +397,11 @@ const presentation = [
 	{
 		path: `${demoPages.crm.subMenu.customerID.path}/:id`,
 		element: <APP.CRM.CUSTOMER />,
+		exact: true,
+	},
+	{
+		path: demoPages.crm.subMenu.productsList.path,
+		element: <APP.CRM.PRODUCTS />,
 		exact: true,
 	},
 

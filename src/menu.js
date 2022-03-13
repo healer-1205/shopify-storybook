@@ -362,6 +362,12 @@ export const demoPages = {
 				path: 'crm/customer/1',
 				icon: 'Badge',
 			},
+			productsList: {
+				id: 'productsList',
+				text: 'Products',
+				path: 'crm/products',
+				icon: 'ListAlt',
+			},
 			// sales: {
 			// 	id: 'sales',
 			// 	text: 'Sales',
